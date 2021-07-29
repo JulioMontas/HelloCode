@@ -1,0 +1,635 @@
+ /**
+      * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+      * http://cssreset.com
+      */
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      blockquote, q {
+        quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: '';
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      /* ################ */
+      /* #### Global ####  */
+      /* ################ */
+      html{
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+      }
+      
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color:#f2f2f2;
+        
+      }
+      .container{
+        margin: 0 auto;
+        width: 1280px;
+        height: auto;
+        
+      }
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+      
+      /* ################ */
+      /* #### Header ####  */
+      /* ################ */
+      header {
+        height: 58px;
+        width: 100%;
+      }
+      
+      .headerLink{
+        background:#222;
+        text-align: center;
+        position: relative;
+        padding: 3px 0;
+        width: 100%;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+      }
+      
+      .headerLink:hover{cursor:pointer; background:#333;}
+      
+      /* ################ */
+      /* ##### Nav #####  */
+      /* ################ */
+
+      #myTab {
+      background: white;
+     }
+      
+      #HeaderLangSearch {
+        background:  #fffafa;
+        width: 100%;
+      }
+      
+      #HeaderLangSearch nav{
+        border-bottom:1px solid #f2f2f2;
+        border-width:1px 0;
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+      }
+      #HeaderLangSearch nav li{display:inline;}
+      #HeaderLangSearch nav a {
+    color: #212121;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    padding: 15px;
+    text-decoration: none;
+      }
+      #HeaderLangSearch nav a:hover {
+      color: #ff0082;
+      }
+
+      
+      #HeaderLangSearch .lang-2000 {color: #f1551d;}
+      #HeaderLangSearch .lang-2000:hover {color: #f1a489;}
+      
+      #HeaderLangSearch .lang-1980 {color: #1cafeb;}
+      #HeaderLangSearch .lang-1980:hover {color: #96d2eb;}
+      
+      #HeaderLangSearch .lang-1950 {color: #72c602;}
+      #HeaderLangSearch .lang-1950:hover {color: #afdf70;}
+      
+      #HeaderLangSearch .tab-content > .tab-pane {display: none;}
+      #HeaderLangSearch .tab-content > .active {display: block;}
+      
+      #HeaderLangSearch .nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+        color: #ff0082;
+        font-weight: bold;
+      }
+      #HeaderLangSearch .nav-tabs li a{font-weight:200;}
+      
+      #MainInfoSection{
+        text-align:center;
+        margin:50px 0 ;
+      }
+      #MainInfoSection p {
+    color: #7788b1;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    margin-top: 5px;
+}
+
+      #MainInfoSection h2 {
+        color: #484848;
+        font-size: 65px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      /* ######################## */
+      /* #### Language Text ####  */
+      /* ######################## */
+
+      body:before, body:after {
+        content: "";
+        display: table;
+      }
+      
+      body:after { clear: both }
+      
+      
+      article {
+        margin-bottom: 3rem;
+        position: relative;
+        *zoom: 1;
+      }
+      
+      article:before, article:after {
+        content: "";
+        display: table;
+      }
+      
+      article:after { clear: both }
+      
+      article section:first-of-type {
+        float: right;
+        width: 100%;
+      }
+      
+      article section:last-of-type {
+        display: none;
+        visibility: hidden;
+      }
+      
+      section {
+        -webkit-transition: .125s linear;
+        -moz-transition: .125s linear;
+        -ms-transition: .125s linear;
+        -o-transition: .125s linear;
+        transition: .125s linear;
+      }
+      section p {
+        margin-bottom: 20px;
+      }
+
+      
+      input[type=checkbox] {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+      }
+      
+      [for="read_more"] {
+        background: none repeat scroll 0 0 #3ab9ed;
+        bottom: -3rem;
+        box-shadow: 1px 1px rgba(0, 0, 0, 0.1) inset, -1px -1px rgba(0, 0, 0, 0.1) inset;
+        color: #fff;
+        left: 0;
+        padding: 1rem 0.01rem;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+      
+      [for="read_more"]:hover {
+        background: rgba(0,0,0,.5);
+        color: rgb(255,255,255);
+      }
+      
+      [for="read_more"] span:last-of-type {
+        display: none;
+        visibility: hidden;
+
+      }
+      
+      input[type=checkbox]:checked ~ section {
+        display: block;
+        visibility: visible;
+        width: 100%;
+      }
+      
+      input[type=checkbox]:checked ~ figure { width: 100% }
+      
+      input[type=checkbox]:checked ~ [for="read_more"] span:first-of-type {
+        display: none;
+        visibility: hidden;
+      }
+      
+      input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
+        display: block;
+        visibility: visible;
+      }
+      
+      /* ######################## */
+      /* #### Language Text ####  */
+      /* ######################## */
+
+      #ProgramingLanguageSection {margin-top: 90px;}
+
+      
+
+      /* ######################## */
+      /* #### Language Markup ####  */
+      /* ######################## */
+
+      #ProgramingLanguageSection section {
+        font-size: 18px;
+        margin-top: 5px;
+        text-align: center;
+        width: 49%;
+        float: left;
+      }
+      #ProgramingLanguageSection section:nth-child(5),
+      #ProgramingLanguageSection section:nth-child(7),
+      #ProgramingLanguageSection section:nth-child(9) {
+        margin-left: 2%;
+      }
+
+
+     #ProgramingLanguageSection nav{
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+      }
+
+      #ProgramingLanguageSection nav li {
+    color: #888;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    margin: 20px 10px;
+}
+
+     #ProgramingLanguageSection nav a {
+        color: #ff0082;
+        display: inline-block;
+        font-size: 16px;
+        text-decoration: none;
+        letter-spacing: 0.06em;
+      }
+      #ProgramingLanguageSection nav a:hover {
+        color: #fc9dbe;
+      }
+
+      pre {
+        background: none repeat scroll 0 0 #333;
+        color: #fff;
+        display: block;
+        font-family: Menlo,Monaco,monospace;
+        font-size: 14px;
+        overflow: auto;
+        padding: 30px 20px 15px 0;
+        white-space: pre;
+      }
+
+      /* ######################## */
+      /* #### Influenced By ####  */
+      /* ######################## */   
+
+      #InfluencedBy a:nth-child(6),
+      #InfluencedBy a:nth-child(11),
+      #InfluencedBy a:nth-child(16),
+      #InfluencedBy a:nth-child(21),
+      #InfluencedBy a:nth-child(26), {
+        margin: 0 0px 4px 0;
+        width: 197px;
+      }
+
+      #InfluencedBy a:hover,
+      #Influenced a:hover {
+        border: 1px solid #888;
+        opacity: 1;
+      }
+
+      #InfluencedBy a p,
+      #Influenced a p  {
+        letter-spacing: 1px;
+        line-height: 20px;
+      }
+      #InfluencedBy a p:first-child,
+      #Influenced a p:first-child {
+        color: #666666;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      #InfluencedBy a p:nth-child(2),
+      #Influenced a p:nth-child(2) {
+        color: lightslategray;
+        font-size: 13px;
+      }
+      #InfluencedBy a p:nth-child(3),
+      #Influenced a p:nth-child(3) {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1.7px;
+      }
+      #InfluencedBy .lang-2000, #Influenced .lang-2000 {color: #f1551d;}
+      #InfluencedBy .lang-1980, #Influenced .lang-1980 {color: #1cafeb;}
+      #InfluencedBy .lang-1950, #Influenced .lang-1950 {color: #72c602;}
+
+
+      #InfluencedBy .MissingLang , #Influenced .MissingLang {
+        opacity: 0.3;
+      }
+
+     
+
+
+
+/* ################ */
+/* ### Footer #####  */
+/* ################ */
+
+/* This footer style is copy from the index footer css file*/
+
+footer {
+    background: none repeat scroll 0 0 #fff;
+    border-top: 1px solid #d8d8d8;
+    float: right;
+    height: 90px;
+    margin-top: 75px;
+    opacity: 0.6;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+footer:hover{opacity:0.9;}
+footer #forNow {
+    margin-top: 25px;
+    text-align: center;
+}
+footer p {
+  padding:11px 0;
+  text-align: center;
+  font-size:13px;
+  letter-spacing:0.8px;
+  color:#666;
+}  
+footer a {
+    color: #ff0082;
+    font-size: 13px;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fc9dbe;
+}
+
+
+/*==================================================
+=                Mobile First Method               =
+==================================================*/
+
+/***************************
+****************************
+ Extra Small Devices, Phones
+****************************
+***************************/
+@media only screen and (min-width : 320px) {
+
+.container {width: 100%}
+
+
+/* #### Language Text ####  */
+
+      #langInfoSection{width:90%;}
+
+      article p{
+        font-size:15px;
+        font-family: Georgia, Times, "Times New Roman", serif;
+        letter-spacing: 1px;
+        line-height:35px;
+        color: #666;
+        text-align: center;
+
+      }
+h6 {
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    padding: 60px 0 10px;
+    text-align: center;
+}
+/* #### Language Markup ####  */
+      #ProgramingLanguageSection section {
+        font-size: 18px;
+        margin-top: 5px;
+        text-align: center;
+        width: 100%;
+        float: left;
+      }
+      #ProgramingLanguageSection section:nth-child(5),
+      #ProgramingLanguageSection section:nth-child(7),
+      #ProgramingLanguageSection section:nth-child(9) {
+        margin-left: 0%;
+      }
+
+#ProgramingLanguageSection section h3 {
+    background: none repeat scroll 0 0 #999;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+#InfluencedBy a, #Influenced a {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: block;
+    float: ce;
+    height: 57px;
+    margin: 0 4px 4px 0;
+    opacity: 0.7;
+    padding: 28.5px;
+    text-align: center;
+    text-decoration: none;
+    width: 81.5%;
+}
+/* The margin-right: 80px; is not the right solution and the rest of the code is messy*/
+/* 10.07.14 #InfluencedBy {margin-top:350px} and the bro, are the old bug ontop and now is a pixel problem(great)*/
+#InfluencedBy {margin-top: 800px;}
+#Influenced {padding-top: 0px;}
+
+}
+
+/***************************
+****************************
+Custom, iPhone Retina
+****************************
+***************************/
+@media only screen and (min-width : 480px) {
+#InfluencedBy a, #Influenced a {
+    width: 93.5%;
+}
+/* The margin-right: 80px; is not the right solution and the rest of the code is messy*/
+/* 10.07.14 #InfluencedBy {margin-top:350px} and the bro, are the old bug ontop and now is a pixel problem(great)*/
+#InfluencedBy {margin-top: 680px;}
+#Influenced {padding-top: 0px;}
+
+}
+
+/***************************
+****************************
+Small Devices, Tablets
+****************************
+***************************/
+@media only screen and (min-width : 768px) {
+.container {width: 748px;}
+footer p {font-size: 13px;}
+article p{font-size:19px;}
+h6 {
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    padding: 60px 0 10px;
+    text-align: left;
+}
+/* #### Language Markup ####  */
+      #ProgramingLanguageSection section {
+        font-size: 18px;
+        margin-top: 5px;
+        text-align: center;
+        width: 49%;
+        float: left;
+      }
+      #ProgramingLanguageSection section:nth-child(5),
+      #ProgramingLanguageSection section:nth-child(7),
+      #ProgramingLanguageSection section:nth-child(9) {
+        margin-left: 2%;
+      }
+      #ProgramingLanguageSection section h3 {
+        border: 3px solid #d7d7d7;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 20px 0;
+        background:none;
+        color:#888;
+      }
+
+/* The margin-right: 80px; is not the right solution and the rest of the code is messy*/
+/* 10.07.14 #InfluencedBy {margin-top:350px} and the bro, are the old bug ontop and now is a pixel problem(great)*/
+#InfluencedBy {margin-top: 450px;}
+#Influenced {padding-top: 0px;}
+
+}
+
+/***************************
+****************************
+Medium Devices, Desktops
+****************************
+***************************/
+@media only screen and (min-width : 960px) {
+
+.container {width: 940px;}
+footer p {font-size: 13px;}
+   #InfluencedBy a,
+      #Influenced a {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    display: block;
+    float: left;
+    height: 57px;
+    margin: 0 4px 4px 0;
+    opacity: 0.7;
+    padding: 28.5px;
+    text-align: center;
+    text-decoration: none;
+    width: 193px;
+}
+
+/* The margin-right: 80px; is not the right solution and the rest of the code is messy*/
+      /* 10.07.14 #InfluencedBy {margin-top:350px} and the bro, are the old bug ontop and now is a pixel problem(great)*/
+
+      #InfluencedBy {margin-top:410px}
+       #Influenced {padding-top:230px;}
+
+
+
+}
+/***************************
+****************************
+Large Devices, Wide Screens
+****************************
+***************************/
+@media only screen and (min-width : 1024px) {
+
+.container {width: 1024px;}
+
+/* #### Language Text ####  */
+#langInfoSection{width:950px;}
+article p{
+        font-size:24px;
+        letter-spacing: 1px;
+        line-height:35px;
+        color: #666;
+        text-align: left;
+      }
+
+/* The margin-right: 80px; is not the right solution and the rest of the code is messy*/
+      /* 10.07.14 #InfluencedBy {margin-top:350px} and the bro, are the old bug ontop and now is a pixel problem(great)*/
+
+      #InfluencedBy {margin-top:350px}
+       #Influenced {padding-top:240px;}
+}
+/***************************
+****************************
+Large Devices, Wide Screens
+****************************
+***************************/
+@media only screen and (min-width : 1280px) {
+
+.container {width: 1280px;}
+
+/* The margin-right: 80px; is not the right solution and the rest of the code is messy*/
+      /* 10.07.14 #InfluencedBy {margin-top:350px} and the bro, are the old bug ontop and now is a pixel problem(great)*/
+
+      #InfluencedBy {margin-top:350px}
+       #Influenced {padding-top:130px;}
+
+}
+
+
+

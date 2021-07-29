@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie iec7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Helloco.de | A list of computer programming languages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content=" Julio Montas">
+  <meta name="description" content="A list of computer programming languages from past to present.">
+  <meta name="keywords" content="code,hellocode,programming,side project,java,javascript,oop,hello world,">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- JavaScript
+  ================================================== -->
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  <script src="js/processing.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    // convenience function to get the id attribute of generated sketch html element
+    function getProcessingSketchId () { return 'progConnection'; }
+  </script>
+
+  <!-- Stylesheets
+  ================================================== -->
+  <link href="css/style_New.css" rel="stylesheet" type="text/css" />
+  <link href="css/index_New.css" rel="stylesheet" type="text/css" />
+  <style>
+    body{
+      letter-spacing: 1px;
+    }
+
+    /*
+    ######################################
+    ######### Full Screen Loader #########
+    ######################################
+    */
+    #fullScreenLoader {
+      height: 100%;
+      width: 100%;
+      opacity:0.95;
+      filter:alpha(opacity=95);
+      position:fixed;
+      top:0px;
+      left:0px;
+      z-index:1;
+    }
+    #fullScreenLoader img {
+      height: 320px;
+      width: 320px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      margin:-150px 0 0 -150px;
+    }
+
+    .lang-2000{color:#f1551d;}
+    .lang-1980{color:#1cafeb;}
+    .lang-1950{color:#72c602;}
+
+    .list a {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  float: left;
+  margin: 0 4px 4px 0;
+  opacity: 0.7;
+  padding: 30px 0;
+  text-align: center;
+  text-decoration: none;
+  width: 249px;
+}
+    .list a:hover{
+      border: 1px solid #212121;
+      opacity: 1;
+    }
+    .list a span{
+      display: list-item;
+    }
+    .list ul:last-child li a {
+  padding: 28px 0;
+}
+    .list .langName {
+      color: #666666;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .list .paradigm{
+      color: lightslategray;
+  font-size: 13px;
+  margin: 7px 0 0;
+    }
+
+     .list ul:last-child .langName {
+  font-size: 69px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+    .list .year{
+      font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    margin: 7px 0 0;
+    }
+    footer a {
+      text-decoration: none;
+      color:#ff0082;
+      font-size:13px;
+    }
+    footer  a:hover {color: #212121;}
+  </style>
+
+</head>
+<body ng-app="store">
+  <div id="fullScreenLoader"><img src="img/assets/loader.gif" alt="loader" /></div>
+
+  <header>
+    <div id="billboard">
+      <div class="logo">
+        <img src="img/logo/logo_tittle.png" alt="logo"  />
+      </div>
+      <p>A list of computer programming languages from past to present.</p>
+    </div>
+
+    <canvas id="progConnection" data-processing-sources="js/processing/progConnection.pde" resize>
+      <p>Your browser does not support the canvas tag. Try <a href="http://www.mozilla.org/en-US/firefox/new/" target="_self">Firefox</a> or <a href="http://www.google.com/chrome/" target="_self">Google Chrome</a> </p>
+      <!-- Note: you can put any alternative content here. -->
+    </canvas>
+    <div id="gradient"></div>
+    <noscript>
+      <p>JavaScript is required to view the contents of this page.</p>
+    </noscript>
+  </header>
+  <!-- End of Header -->
+
+  <div id="search" class="container">
+    <div class="list">
+
+      <div ng-controller="StoreController as store">
+        <ul ng-repeat="product in store.product">
+          <li class="inline">
+            <a ng-href="langs/{{product.url}}" class="inline">
+              <span class="langName">{{product.name}}</span>
+              <span class="paradigm">{{product.paradigm}}</span>
+              <span class="year" ng-class="product.color">{{product.year}}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div> <!-- End of List -->
+  </div> <!-- End of .container / #search -->
+
+
+  <footer>
+    <div class="container">
+
+      <div id="forNow">
+        <g:plusone size="medium"></g:plusone>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="helloco_de">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+      </div><!-- #forNow Margin Top -->
+
+      <p>  <a href="mailto:hello@juliomontas.com">Feedback</a> for version 0.24 | &#169; 2014 Helloco.de</p>
+    </div>
+  </footer>
+
+  <!-- Calling javascript
+  ================================================== -->
+  <!-- js files at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/list.min.js"></script>
+  <script src="js/searchList.js"></script>
+  <script src="js/fullScreenRandomColor.js"></script>
+  <script src="js/angular/angular.min.js"></script>
+  <script src="js/angular/data/languageList.js"></script>
+
+</body>
+</html>

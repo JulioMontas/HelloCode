@@ -1,0 +1,320 @@
+/* #################### */
+/* Landing Page Canvas  */
+/* #################### */
+canvas {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:-1;
+}
+#gradient {
+    z-index:2;
+    right:0; 
+    bottom:0; 
+    left:0;
+    height:185px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(242,242,242,0) 0%, rgba(242,242,242,1) 90%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,0)), color-stop(90%,rgba(242,242,242,1)));
+    background: -webkit-linear-gradient(top,  rgba(242,242,242,0) 0%,rgba(242,242,242,1) 90%);
+    background: -o-linear-gradient(top,  rgba(242,242,242,0) 0%,rgba(242,242,242,1) 90%);
+    background: -ms-linear-gradient(top,  rgba(242,242,242,0) 0%,rgba(242,242,242,1) 90%);
+    background: linear-gradient(to bottom,  rgba(242,242,242,0) 0%,rgba(242,242,242,1) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+
+}
+#billboard {
+  margin-top: 90px;
+  text-align: center;
+}
+#billboard p {
+  color: #555;
+  font-size: 18px;
+  margin: 10px auto 0;
+  width: 600px;
+}
+/* ################ */
+/* The List Search  */
+/* ################ */
+.list {
+    float: right;
+    height: 100%;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.btn {
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 4px 14px;
+  text-align: center;
+  -webkit-transition: color .5s linear, background-color .5s ease-in-out;
+  -moz-transition: color .5s linear, background-color .5s ease-in-out;
+  -o-transition: color .5s linear, background-color .5s ease-in-out;
+  transition: color .5s linear, background-color .5s ease-in-out;
+}
+#sectionName {
+  color: #9a9a9a;
+  font-size: 0.75em;
+  height: 15px;
+  margin-top: 22px;
+  width: 100%;
+}
+
+/* Search buttons baseline */
+.filter {margin-top: 5px;}
+
+/* The buttons to search by Paradigm */
+#search .btn-paradigm {
+  background-color: #333333;
+  color: #DDDDDD;
+  line-height: normal;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+#search .btn-paradigm:hover {
+  background-color: #4D4D4D;
+  color: #ffffff;
+}
+
+/* The buttons to search by Year */
+#search .btn-1950, #search .btn-1980, #search .btn-2000{
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: normal;
+  width: 395px;
+}
+/* The buttons of the year 1950 */
+#search .btn-1950{background-color: #72C602; color: #F2F2F2;}
+#search .btn-1950:hover{background-color: #81e002; color: #FFFFFF;}
+/* The buttons of the year 1980 */
+#search .btn-1980{background-color: #1CAFEB; color: #F2F2F2;}
+#search .btn-1980:hover{background-color: #1fbeff; color: #FFFFFF;}
+/* The buttons of the year 2000 */
+#search .btn-2000{background-color: #F1551D; color: #F2F2F2;}
+#search .btn-2000:hover{background-color: #ff703d; color: #FFFFFF;}
+
+/* Search box */
+#search input{
+  height: 35px;
+  margin-bottom: 11px;
+  width: 1252px;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+
+/* ################ */
+/* The List Style  */
+/* ################ */
+.year{display:none;}
+.category{display:none;}
+.description{display:none;}
+.box-1950, .box-1980, .box-2000 {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  display: block;
+  float: left;
+  height: 57px;
+  margin: 0 4px 4px 0;
+  padding: 28.5px;
+  text-align: center;
+  width: 193px;
+  opacity:0.7;
+}
+.box-2000:hover,
+.box-1950:hover,
+.box-1980:hover{
+  opacity:1;
+  border: 1px solid #212121;
+}
+.langName {
+  color: #666666;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.subtext-1950, .subtext-1980, .subtext-2000 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.7px;
+  margin: 7px 0 0;
+}
+.subtext-2000{color: #F1551D;}
+.subtext-1980{color: #1CAFEB;}
+.subtext-1950{color: #72C602;} 
+
+
+.subtext {
+  color: lightslategray;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  margin: 7px 0 0;
+  letter-spacing: 1px;
+}
+
+.maintittle{text-align: justify}
+
+/* ################ */
+/* ### Footer #####  */
+/* ################ */
+
+footer {
+    background: none repeat scroll 0 0 #fff;
+    border-top: 1px solid #d8d8d8;
+    float: right;
+    height: 90px;
+    opacity: 0.6;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+footer:hover{opacity:0.9;}
+footer #forNow {
+    margin-top: 25px;
+    text-align: center;
+}
+footer p {
+  padding:11px 0;
+  text-align: center;
+  font-size:13px;
+  letter-spacing:0.8px;
+  color:#666;
+}  
+
+/*==================================================
+=                Mobile First Method               =
+==================================================*/
+
+/***************************
+****************************
+ Extra Small Devices, Phones
+****************************
+***************************/
+@media only screen and (min-width : 320px) {
+
+.container {width: 100%}
+.box-1950, .box-1980, .box-2000 {
+  width: 82%;
+  margin: 0 4px -1px 0; 
+  padding-top:45px;
+  padding-bottom: 45px;
+}
+canvas, .filter{display:none;}
+#billboard {margin-top: 70px;}
+#billboard p {
+  font-size: 14px; 
+  width: 300px;
+}
+#billboard img {width: 300px;}
+header {height: 185px;}
+}
+/***************************
+****************************
+Custom, iPhone Retina
+****************************
+***************************/
+@media only screen and (min-width : 480px) {
+#billboard {margin-top: 30px;}
+.box-1950, .box-1980, .box-2000 {
+  width: 90%; 
+  margin: 0 4px -1px 0;
+}
+#billboard img {width: 440px;}
+header {height: 170px;}
+
+}
+/***************************
+****************************
+Small Devices, Tablets
+****************************
+***************************/
+@media only screen and (min-width : 768px) {
+.container {width: 748px;}
+.filter{display: block;}
+#search .btn-1950, #search .btn-1980, #search .btn-2000 {
+  margin-bottom: 8px;
+  width: 720px;
+}
+#search .btn-paradigm {display: none;}
+#search input {
+  padding-left: 5px;
+  width: 736px;
+}
+.box-1950, .box-1980, .box-2000 {
+  width: 186px;
+  margin: 0 4px 4px 0;
+  padding: 28.5px;
+}
+footer p {font-size: 13px;}
+canvas{display:inline;}
+#billboard p {font-size: 18px; width: 600px;}
+#billboard img {width: 700px;}
+#billboard {margin-top: 90px;}
+header {height: 280px;}
+}
+/***************************
+****************************
+Medium Devices, Desktops
+****************************
+***************************/
+@media only screen and (min-width : 960px) {
+
+.container {width: 940px;}
+#search .btn-1950, #search .btn-1980, #search .btn-2000 {
+  margin-bottom: 8px;
+  width: 907px;
+}
+#search input {
+  padding-left: 5px;
+  width: 925px;
+}
+
+.box-1950, .box-1980, .box-2000 {width: 250px;}
+footer p {font-size: 13px;}
+#sectionName {margin-bottom: 10px;}
+}
+/***************************
+****************************
+Large Devices, Wide Screens
+****************************
+***************************/
+@media only screen and (min-width : 1024px) {
+
+.container {width: 1004px;}
+#search .btn-1950, #search .btn-1980, #search .btn-2000 {
+  margin-top: 10px;
+  width: 303px;
+}
+#search input {width: 990px;}
+.box-1950, .box-1980, .box-2000 {width: 188px;}
+#search .btn-paradigm {
+  padding: 10px 9px;
+  display: inline;
+}
+
+}
+/***************************
+****************************
+Large Devices, Wide Screens 
+****************************
+***************************/
+@media only screen and (min-width : 1280px) {
+
+.container {width: 1279px;}
+#search .btn-1950, #search .btn-1980, #search .btn-2000 {
+  width: 391px;
+}
+
+#search .btn-paradigm {padding: 10px 22.90px;}
+#search input {
+  width: 1257px;
+}
+.box-1950, .box-1980, .box-2000 {width: 191px;}
+}
